@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collabed</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity to dim the background */
+            z-index: 0.1;
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; /* Ensure the content is above the overlay */
+        }
+
+        .text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block; /* Ensure the background only wraps around the content */
+            width: auto; /* Automatically size the background to fit the content */
+            margin-bottom: 10px; /* Add some space between text blocks */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            color: white;
+            text-align: bottom left;
+            padding: 10px;
+            font-size: 14px;
+        }
+</style>
+    <script src="scripts/passwordReturn.js"></script>
+</head>
+<body>
+<div class="content">
+
+
+    <header>
+    <div class="text">
+        <h1>Collabed Portfolio</h1>
+        </div>
+    </header>
+    <ul>
+    <div class="text">
+        <li><a href="/josh">Josh's Games</a></li>
+      <br>
+        <li><a href="/blake">Blake's Games</a></li>
+    </ul>
+
+
+    <script src="rbg.js"></script>
+  <footer>This site was coded by Blake</footer>
+</div>
+</body>
+</html>
