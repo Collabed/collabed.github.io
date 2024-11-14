@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,44 +6,38 @@
     <title>Josh</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background-image: url('background.png');
-            background-size: cover;
-            background-position: top;
-            background-repeat: no-repeat;
-            color: white;
-        }
+     body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+}
 
-        body::before {
+body::before {
             content: '';
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity to dim the background */
             z-index: 0.1;
             pointer-events: none;
         }
 
         .content {
             position: relative;
-            z-index: 2;
+            z-index: 2; /* Ensure the content is above the overlay */
         }
 
         .text {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
             border-radius: 5px;
-            display: inline-block;
-            width: auto;
-            margin-bottom: 10px;
-        }
-
-        .sections {
-            display: flex;
-            justify-content: flex-end; /* Aligns sections to the right */
-            gap: 20px; /* Adds space between sections */
+            display: inline-block; /* Ensure the background only wraps around the content */
+            width: auto; /* Automatically size the background to fit the content */
+            margin-bottom: 10px; /* Add some space between text blocks */
         }
 
         ul {
@@ -55,61 +48,80 @@
         ul li {
             margin-bottom: 10px;
         }
-
         footer {
             color: white;
-            text-align: left;
+            text-align: bottom left;
             padding: 10px;
             font-size: 14px;
         }
-
+        
         a {
-            color: white;
-            text-decoration: none;
-        }
+  color: white;
+  text-decoration: none;
+}
 
-        a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-    </style>
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+</style>
 </head>
 <body>
 <div class="content">
+
+
     <header>
-        <div class="text">
-            <h1>Josh's Games</h1>
+    <div class="text">
+        <h1>Josh's Games</h1>
         </div>
     </header>
-    <div class="sections">
-        <div class="text">
-            <h2>Deprecated</h2>
-            <ul>
-                <li><a href="https://scratch.mit.edu/projects/1093078991/" target="_blank">The Woods</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093084668/" target="_blank">Ghost & Gang (Artwork)</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093091043/" target="_blank">Explorer</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093142897/" target="_blank">Discovery</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093147795/" target="_blank">-=The Complex=-</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093149918/" target="_blank">-=Survival Island=-</a></li>
-            </ul>
-        </div>
-        <div class="text">
-            <h2>Full Releases</h2>
-            <ul>
-                <li><a href="https://scratch.mit.edu/projects/945425913/" target="_blank">The Flesh</a></li>
-                <li><a href="https://scratch.mit.edu/projects/903162666/" target="_blank">Mad Rabbit</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1086476704/" target="_blank">Sprite Jesus</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093246294/" target="_blank">Zombie Apocalypse</a></li>
-                <li><a href="https://scratch.mit.edu/projects/1093776121/" target="_blank">Turtle Beach</a></li>
-            </ul>
-        </div>
+    <div class="text">
+        <h2>Deprecated</h2>
+        <ul>
+        <li><a href="https://scratch.mit.edu/projects/1093078991/" target="_blank">The Woods</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1093084668/" target="_blank">Ghost & Gang (Artwork)</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1093091043/" target="_blank">Explorer</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1093142897/" target="_blank">Discovery</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1093147795/" target="_blank">-=The Complex=-</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1093149918/" target="_blank">-=Survival Island=-</a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        <li><a href="" target="_blank"></a></li>
+        </ul>
     </div>
-    <footer>
+    <div class="text">
+        <h2>Full Releases</h2>
+        <ul>
+        <li><a href="https://scratch.mit.edu/projects/945425913/" target="_blank">The Flesh</a></li>
+        <li><a href="https://scratch.mit.edu/projects/903162666/" target="_blank">Mad Rabbit</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1086476704/" target="_blank"></a>Sprite Jesus</li>
+        <li><a href="https://scratch.mit.edu/projects/1093246294/" target="_blank"></a>Zombie Apocalypse</li>
+        <li><a href="https://scratch.mit.edu/projects/1093776121/" target="_blank"></a>Turtle Beach</li>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </ul>
+    </div>
+  <footer>
         <div class="text-2">
             <a href="/index">Back to Homepage</a>
         </div>
     </footer>
-    <footer>This site was coded by Blake</footer>
+  
+  <footer>This site was coded by Blake</footer>
+  
 </div>
 </body>
 </html>
