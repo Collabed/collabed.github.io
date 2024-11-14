@@ -41,6 +41,12 @@
             margin-bottom: 10px;
         }
 
+        .sections {
+            display: flex;
+            justify-content: flex-end; /* Aligns sections to the right */
+            gap: 20px; /* Adds space between sections */
+        }
+
         ul {
             list-style: none;
             padding: 0;
@@ -52,7 +58,7 @@
 
         footer {
             color: white;
-            text-align: bottom left;
+            text-align: left;
             padding: 10px;
             font-size: 14px;
         }
@@ -66,13 +72,6 @@
             color: white;
             text-decoration: underline;
         }
-
-        .full-releases {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin-top: 10px; /* Space between Deprecated and Full Releases */
-        }
     </style>
 </head>
 <body>
@@ -82,26 +81,28 @@
             <h1>Josh's Games</h1>
         </div>
     </header>
-    <div class="text">
-        <h2>Deprecated</h2>
-        <ul>
-            <li><a href="https://scratch.mit.edu/projects/1093078991/" target="_blank">The Woods</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093084668/" target="_blank">Ghost & Gang (Artwork)</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093091043/" target="_blank">Explorer</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093142897/" target="_blank">Discovery</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093147795/" target="_blank">-=The Complex=-</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093149918/" target="_blank">-=Survival Island=-</a></li>
-        </ul>
-    </div>
-    <div class="full-releases text">
-        <h2>Full Releases</h2>
-        <ul>
-            <li><a href="https://scratch.mit.edu/projects/945425913/" target="_blank">The Flesh</a></li>
-            <li><a href="https://scratch.mit.edu/projects/903162666/" target="_blank">Mad Rabbit</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1086476704/" target="_blank">Sprite Jesus</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093246294/" target="_blank">Zombie Apocalypse</a></li>
-            <li><a href="https://scratch.mit.edu/projects/1093776121/" target="_blank">Turtle Beach</a></li>
-        </ul>
+    <div class="sections">
+        <div class="text">
+            <h2>Deprecated</h2>
+            <ul>
+                <li><a href="https://scratch.mit.edu/projects/1093078991/" target="_blank">The Woods</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093084668/" target="_blank">Ghost & Gang (Artwork)</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093091043/" target="_blank">Explorer</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093142897/" target="_blank">Discovery</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093147795/" target="_blank">-=The Complex=-</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093149918/" target="_blank">-=Survival Island=-</a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <h2>Full Releases</h2>
+            <ul>
+                <li><a href="https://scratch.mit.edu/projects/945425913/" target="_blank">The Flesh</a></li>
+                <li><a href="https://scratch.mit.edu/projects/903162666/" target="_blank">Mad Rabbit</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1086476704/" target="_blank">Sprite Jesus</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093246294/" target="_blank">Zombie Apocalypse</a></li>
+                <li><a href="https://scratch.mit.edu/projects/1093776121/" target="_blank">Turtle Beach</a></li>
+            </ul>
+        </div>
     </div>
     <footer>
         <div class="text-2">
